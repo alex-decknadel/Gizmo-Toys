@@ -1,0 +1,727 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+  
+	<link rel="shortcut icon" href="">
+	<link rel="apple-touch-icon" href="" />
+	
+	<title>Gizmo Toys - Order Form</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="common/css/default.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+    <link href="common/css/order.css" rel="stylesheet" type="text/css">
+
+	<script src="common/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="common/js/lib.js" type="text/javascript"></script>
+
+<script>
+
+	// Load jQuery and other Javascript after page is done loading	
+	$( document.body ).ready(function () {
+
+		$( "#mobilenav" ).click(function() {
+			$( "#primary" ).slideToggle( "fast", function() {
+			});
+		});
+
+	});
+
+</script>
+
+
+</head>
+
+<body>
+
+	<header class="outerwrap">
+
+		<div class="hero">
+
+			<div class="innerwrap">
+                
+            	<a href="#"><img src="common/art/christmas_hero.png"/></a>
+
+        	</div>
+			
+        </div>
+	
+		<div class="innerwrap">
+            			
+			<div class="logo">
+                
+                <div>
+
+                	<a href="index.html">
+
+                		<img src="common/art/logo.png"/>
+
+                	</a>
+
+                </div>
+			
+			</div>
+
+			<div>
+	
+				<a href="order.html">
+
+					<img src="common/art/shopping-cart.png"/>
+
+				</a>			
+				
+				<form id="search-bar" action="http://www.google.com/search?q=">
+				
+					<input type="search" name="q" id="search" placeholder="Search..." />
+					
+				</form>
+
+				<nav>
+				
+					<ul id="mobile">
+						
+						<li><a href="#primary" id="mobilenav">☰</a></li>
+						
+					</ul>
+				
+					<ul id="primary">
+					
+						<li><a href="index.html">Home</a></li>
+						
+						<li>
+							<a href="products.html">Products</a>
+
+							<ul id="products-menu">
+
+								<li><a href="products.html#educational">Educational</a></li>
+
+								<li><a href="products.html#electronics">Electronics</a></li>
+
+								<li><a href="products.html#figures">Figures and Dolls</a></li>
+
+								<li><a href="products.html#food">Food Related</a></li>
+
+								<li><a href="products.html#games">Games</a></li>
+
+								<li><a href="products.html#models">Models/Modelling Kits</a></li>
+
+								<li><a href="products.html#toy-cars">Toy Cars</a></li>
+
+								<li><a href="products.html#toy-guns">Toy Guns</a></li>
+
+								<li><a href="products.html#other">Other</a></li>
+
+							</ul>
+
+						</li>
+						
+						<li><a href="order.html">Order</a></li>
+						
+						<li><a href="about_us.html">About Us</a></li>
+						
+						<li><a href="support.html">Support</a></li>
+					
+					</ul>
+				
+				</nav>
+                
+			</div>
+	
+		</div>
+	
+	</header>
+	
+	<div class="outerwrap">
+	
+		<main class="innerwrap">
+	
+			<article>
+
+				<h1>Order Form</h1>
+		
+				<form id="order" action="emailform.php" method="post">
+		
+					<fieldset id="contact-field">
+			
+						<legend>Contact Information</legend>
+			
+						<dl>
+				
+							<dt>First Name</dt>
+				
+							<dd>
+
+								<input type="text" name="fname" id="fname" size="20" />
+
+							</dd>
+				
+						</dl>
+			
+						<dl>
+				
+							<dt>Last Name</dt>
+				
+							<dd>
+
+								<input type="text" name="lname" id="lname" size="20" />
+
+							</dd>
+			
+						</dl>
+			
+						<dl>
+						
+							<dt>Address</dt>
+				
+							<dd>
+
+								<input type="text" name="address" id="address" size="20" />
+
+							</dd>
+			
+						</dl>
+			
+						<dl>
+				
+							<dt>Address Line 2</dt>
+				
+							<dd>
+
+								<input type="text" name="address2" id="address2" size="20" />
+
+							</dd>
+			
+						</dl>
+			
+						<dl>
+				
+							<dt>City</dt>
+				
+							<dd>
+
+								<input type="text" name="city" id="city" size="20" />
+
+							</dd>
+			
+						</dl>
+			
+						<dl>
+				
+							<dt>State</dt>
+				
+							<dd>
+						
+								<select>
+						
+									<option>Select State...</option>
+						
+									<option value="AL">Alabama</option>
+						
+									<option value="AK">Alaska</option>
+						
+									<option value="AZ">Arizona</option>
+						
+									<option value="AR">Arkansas</option>
+						
+									<option value="CA">California</option>
+						
+									<option value="CO">Colorado</option>
+						
+									<option value="CT">Connecticut</option>
+						
+									<option value="DE">Delaware</option>
+						
+									<option value="DC">District Of Columbia</option>
+						
+									<option value="FL">Florida</option>
+						
+									<option value="GA">Georgia</option>
+						
+									<option value="HI">Hawaii</option>
+						
+									<option value="ID">Idaho</option>
+						
+									<option value="IL">Illinois</option>
+						
+									<option value="IN">Indiana</option>
+						
+									<option value="IA">Iowa</option>
+						
+									<option value="KS">Kansas</option>
+								
+									<option value="KY">Kentucky</option>
+						
+									<option value="LA">Louisiana</option>
+						
+									<option value="ME">Maine</option>
+						
+									<option value="MD">Maryland</option>
+						
+									<option value="MA">Massachusetts</option>
+						
+									<option value="MI">Michigan</option>
+						
+									<option value="MN">Minnesota</option>
+						
+									<option value="MS">Mississippi</option>
+						
+									<option value="MO">Missouri</option>
+						
+									<option value="MT">Montana</option>
+						
+									<option value="NE">Nebraska</option>
+									
+									<option value="NV">Nevada</option>
+						
+									<option value="NH">New Hampshire</option>
+						
+									<option value="NJ">New Jersey</option>
+						
+									<option value="NM">New Mexico</option>
+						
+									<option value="NY">New York</option>
+						
+									<option value="NC">North Carolina</option>
+						
+									<option value="ND">North Dakota</option>
+						
+									<option value="OH">Ohio</option>
+						
+									<option value="OK">Oklahoma</option>
+						
+									<option value="OR">Oregon</option>
+						
+									<option value="PA">Pennsylvania</option>
+						
+									<option value="RI">Rhode Island</option>
+						
+									<option value="SC">South Carolina</option>
+								
+									<option value="SD">South Dakota</option>
+						
+									<option value="TN">Tennessee</option>
+						
+									<option value="TX">Texas</option>
+						
+									<option value="UT">Utah</option>
+						
+									<option value="VT">Vermont</option>
+						
+									<option value="VA">Virginia</option>
+						
+									<option value="WA">Washington</option>
+							
+									<option value="WV">West Virginia</option>
+						
+									<option value="WI">Wisconsin</option>
+						
+									<option value="WY">Wyoming</option>
+					
+								</select>
+				
+							</dd>
+			
+						</dl>
+			
+						<dl>
+				
+							<dt>ZIP</dt>
+				
+							<dd>
+
+								<input type="text" name="zip" id="zip" size="10" maxlength="10"/>
+
+							</dd>
+				
+						</dl>
+
+						<dl>
+							
+							<dt>Phone Number</dt>
+
+							<dd>
+
+								<input type="text" name="phone" id="phone" size="10" maxlength="10"/>
+
+							</dd>
+
+						</dl>
+			
+						<dl>
+				
+							<dt>Email Address</dt>
+				
+							<dd>
+
+								<input type="email" name="email" id="email" size="20" />
+
+							</dd>
+				
+						</dl>
+			
+						<dl>
+				
+							<dt>Password</dt>
+				
+							<dd>
+
+								<input type="password" name="password" id="password" size="20" />
+
+							</dd>
+							
+						</dl>
+						
+					</fieldset>
+		
+					<fieldset id="order-items">
+			
+						<legend>Customer Order</legend>
+				
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy01" value="BB Gun" />
+						
+									<label for="toy01">Daisy Red Ryder BB Gun</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty01">Quantity:</label>
+
+									<input type="number" name="qty01" id="qty01" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+				
+							<dl id="order-gloves">
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy02" value="Boxing Gloves" />
+						
+									<label for="toy02">Everlast Boxing Gloves</label>
+
+								</dt>
+
+								<dd>
+					
+									<div>
+
+										<label for="gloves1">Red</label>
+
+										<input type="radio" value="Red" name="gloves" id="gloves01" />
+					
+										<label for="gloves2">Blue</label>
+
+										<input type="radio" value="Blue" name="gloves" id="gloves02" />
+					
+									</div>
+
+									<div>
+
+										<label for="qty01">Quantity:</label>
+
+										<input type="number" name="qty02" id="qty02" min="1" max="5" />
+
+									</div>
+
+								</dd>
+
+							</dl>
+
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy03" value="Fire Engine" />
+						
+									<label for="toy03">Tonka Fire Engine</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty03">Quantity:</label>
+
+									<input type="number" name="qty03" id="qty03" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy04" value="Lincoln Logs" />
+						
+									<label for="toy04">Lincoln Logs</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty04">Quantity:</label>
+
+									<input type="number" name="qty04" id="qty04" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy05" value="Plush Frog" />
+						
+									<label for="toy05">Plush Red Frog</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty05">Quantity:</label>
+
+									<input type="number" name="qty05" id="qty05" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy06" value="Rubik's Cube" />
+						
+									<label for="toy06">Rubik's Cube</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty06">Quantity:</label>
+
+									<input type="number" name="qty06" id="qty06" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy07" value="Tiny Cars" />
+						
+									<label for="toy07">Tiny Cars</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty07">Quantity:</label>
+
+									<input type="number" name="qty07" id="qty07" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy08" value="Wiffle Balls" />
+						
+									<label for="toy08">Wiffle Balls</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty08">Quantity:</label>
+
+									<input type="number" name="qty08" id="qty08" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+
+							<dl>
+							
+								<dt>
+
+									<input type="checkbox" name="toy" id="toy09" value="Yo-Yos" />
+						
+									<label for="toy09">Duncan Yo-Yos</label>
+
+								</dt>
+
+								<dd>
+
+									<label for="qty09">Quantity:</label>
+
+									<input type="number" name="qty09" id="qty09" min="1" max="5" />
+
+								</dd>
+
+							</dl>
+			
+					</fieldset>
+		
+					<fieldset id="credit">
+			
+						<legend>Credit Card Information</legend>
+
+						<dl>
+
+							<dt>Card Number</dt>
+
+							<dd>
+				
+								<input type="text" class="card-number" />
+				
+							</dd>
+
+						</dl>
+
+						<dl>
+
+							<dt>Expiration Date</dt>
+
+							<dd class="date-field">
+     							
+     							<div class="month">
+        							
+        							<select name="Month">
+          								
+          								<option value="january">January</option>
+          								
+          								<option value="february">February</option>
+          								
+          								<option value="march">March</option>
+            							
+            							<option value="april">April</option>
+          								
+          								<option value="may">May</option>
+          								
+          								<option value="june">June</option>
+          								
+          								<option value="july">July</option>
+          								
+          								<option value="august">August</option>
+          								
+          								<option value="september">September</option>
+          								
+          								<option value="october">October</option>
+          								
+          								<option value="november">November</option>
+          								
+          								<option value="december">December</option>
+        							
+        							</select>
+      							
+      							</div>
+      							
+      							<div class="year">
+        
+        							<select name="Year">
+          
+          								<option value="2016">2016</option>
+          
+          								<option value="2017">2017</option>
+          
+          								<option value="2018">2018</option>
+          
+          								<option value="2019">2019</option>
+          
+          								<option value="2020">2020</option>
+          
+          								<option value="2021">2021</option>
+          
+          								<option value="2022">2022</option>
+          
+          								<option value="2023">2023</option>
+          
+          								<option value="2024">2024</option>
+        
+        							</select>
+      
+      							</div>
+    
+    						</dd>
+				
+						</dl>
+
+						<dl>
+
+							<dt>Card Verification</dt>
+
+							<dd>
+								
+								<input type="text" size="3" maxlength="3" placeholder="CVV" />
+
+							</dd>
+
+						</dl>
+
+					</fieldset>
+
+					<dl>
+				
+						<input type="hidden" name="studentid" id="studentid" value="webuser8675309" />
+			
+						<input type="submit" name="submit" id="submit" value="Send Order" />
+
+					</dl>
+			
+				</form>
+		
+			</article>
+		
+		</main>
+    
+    </div>
+	
+	<footer class="outerwrap">
+	
+		<div class="innerwrap">
+		
+			<section class="copyright">
+			
+				<p>&copy; Copyright 2018 All Rights Reserved</p>
+				
+				<p>Gizmo Toys</p>
+			
+			</section>
+			
+			<section class="contact">
+
+				<h5>Contact Information</h5>
+			
+				<p><span>Marketing Executive:</span> Natsuki Doki</p>
+				
+				<p><span>Phone:</span> (555) 666-1488</p>
+				
+				<p><span>Email:</span> market@gizmotoys.com</p>
+			
+			</section>
+		
+		</div>
+	
+	</footer>
+	
+</body>
+
+</html>

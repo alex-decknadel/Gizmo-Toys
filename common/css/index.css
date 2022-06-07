@@ -1,0 +1,74 @@
+/* This is for the Index page*/
+article section:not(:last-child) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+article section:not(:first-child) {
+	margin-top: 2em;
+}
+
+section h2 {
+	width: 100%;
+	padding-bottom: .5em;
+}
+
+article section:not(:last-child) div {
+	flex: 0 1 55%;
+}
+
+article section p {
+	flex: 0 1 40%;
+}
+
+#index-categories {
+	padding: 1em;
+	background-color: #c5e0e8;
+	margin: 1em 0;
+}
+
+#index-categories ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-content: space-evenly;
+}
+
+#index-categories ul li {
+	margin: 1em 0;
+}
+
+#index-categories ul li a {
+	border-radius: .5em;
+	font-size: 1.15em;
+	padding: .25em;
+}
+
+#index-categories ul li a:hover {
+	background-color: #919FA3;
+    color: #FFF;
+}
+
+@media screen and (max-width: 750px) {
+	article section:not(:last-child) {
+		display: block;
+	}
+
+	article section:not(:nth-child(2)) p {
+		margin-bottom: 1em;
+	}
+
+	article section:nth-child(2) p {
+		margin-top: 1em;
+	}
+
+	#index-categories ul {
+		display: block;
+		text-align: center;
+	}
+
+	#index-categories ul li {
+		margin: 1.5em 0;
+	}
+}

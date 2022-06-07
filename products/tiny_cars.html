@@ -1,0 +1,442 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+  
+	<link rel="shortcut icon" href="">
+	<link rel="apple-touch-icon" href="" />
+	
+	<title>Gizmo Toys - Tiny Cars</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="../common/css/default.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+
+	<script src="../common/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="../common/js/lib.js" type="text/javascript"></script>
+	<script src="../common/js/changeImage.js" type="text/javascript"></script>
+
+<script>
+
+	// Load jQuery and other Javascript after page is done loading	
+	$( document.body ).ready(function () {
+
+		$( "#mobilenav" ).click(function() {
+			$( "#primary" ).slideToggle( "fast", function() {
+			});
+		});
+
+	});
+
+</script>
+
+
+</head>
+
+<body>
+
+	<header class="outerwrap">
+
+		<div class="hero">
+
+			<div class="innerwrap">
+                
+            	<a href="#"><img src="../common/art/christmas_hero.png"/></a>
+
+        	</div>
+			
+        </div>
+	
+		<div class="innerwrap">
+            			
+			<div class="logo">
+                
+                <div>
+
+                	<a href="index.html">
+
+                		<img src="../common/art/logo.png"/>
+
+                	</a>
+
+                </div>
+			
+			</div>
+
+			<div>
+	
+				<a href="../order.html">
+
+					<img src="../common/art/shopping-cart.png"/>
+
+				</a>			
+				
+				<form id="search-bar" action="http://www.google.com/search?q=">
+				
+					<input type="search" name="q" id="search" placeholder="Search..." />
+					
+				</form>
+
+				<nav>
+				
+					<ul id="mobile">
+						
+						<li><a href="#primary" id="mobilenav">☰</a></li>
+						
+					</ul>
+				
+					<ul id="primary">
+					
+						<li><a href="../index.html">Home</a></li>
+						
+						<li>
+							<a href="../products.html">Products</a>
+
+							<ul id="products-menu">
+
+								<li><a href="../products.html#educational">Educational</a></li>
+
+								<li><a href="../products.html#electronics">Electronics</a></li>
+
+								<li><a href="../products.html#figures">Figures and Dolls</a></li>
+
+								<li><a href="../products.html#food">Food Related</a></li>
+
+								<li><a href="../products.html#games">Games</a></li>
+
+								<li><a href="../products.html#models">Models/Modelling Kits</a></li>
+
+								<li><a href="../products.html#toy-cars">Toy Cars</a></li>
+
+								<li><a href="../products.html#toy-guns">Toy Guns</a></li>
+
+								<li><a href="../products.html#other">Other</a></li>
+
+							</ul>
+
+						</li>
+						
+						<li><a href="../order.html">Order</a></li>
+						
+						<li><a href="../about_us.html">About Us</a></li>
+						
+						<li><a href="../support.html">Support</a></li>
+					
+					</ul>
+				
+				</nav>
+                
+			</div>
+	
+		</div>
+	
+	</header>
+	
+	<div class="outerwrap">
+	
+		<main class="innerwrap">
+	
+			<article class="product">
+		
+				<section class="product-images">
+                    
+                    <div>
+				
+					   <img id="product-image" src="../common/art/tiny_cars/blue_car.png"/>
+				
+				    </div>
+                    
+                    <div id="thumbnails">
+
+                      	<!-- All photos provided by Gizmo -->
+                        <div class="thumbnail"><img onclick="changeTinyCars1()" src="../common/art/tiny_cars/bluecar_thumbnail.png"/></a></div>
+                        
+                        <div class="thumbnail"><img onclick="changeTinyCars2()" src="../common/art/tiny_cars/bluecars_thumbnail.png"/></div>
+                        
+                        <div class="thumbnail"><img onclick="changeTinyCars3()" src="../common/art/tiny_cars/beetle_thumbnail.png"/></div>
+                        
+                    </div>
+                
+                </section>
+				
+				<section class="information">
+				
+					<div class="product-info">
+					
+						<h1>Tiny Cars</h1>
+						
+						<p>These tiny cars will race their way into children's playtime! Small but many, these cars are a great way for kids to pass the time racing one another.</p>
+                        
+                        <div>
+                            
+                            <p><img id="warning" src="../common/art/warning-outline.png"/></p>
+                            
+                            <p><span>WARNING: CHOKING HAZARD</span> -- Small parts; not for children under 3 years.</p>
+                            
+                        </div>
+
+                       	<div>
+
+							<h2>$9.99</h2>
+						
+                        	<button type="submit">Add to Cart</button>
+
+                        </div>
+					
+					</div>
+					
+					<div class="tabs">
+					
+						<input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1">Overview</label>
+                        
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2">Specifications</label>
+                        
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3" id="last-tab">Warranty &amp; Returns</label>
+                        
+                        <div id="overview">
+                                
+                            <p>These tiny cars will race their way into children's playtime! Small but many, these cars are a great way for kids to pass the time racing one another.</p>
+                            
+                            <p>Genuine die-casted metal cars that kids can trade and race one another with, these are a pasttime kids can partake in to become collectors one day. This pack includes 9 cars, including a Beetle.</p>
+                                
+                        </div>
+                        
+                        <div id="specifications">
+                                
+                            <table>
+                                
+                                <tr>
+                                    
+                                    <th>Product Dimensions</th>
+                                    
+                                    <td>10 x 1 x 15 inches</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>Item Weight</th>
+                                    
+                                    <td>14.1 ounces</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>Shipping Weight</th>
+                                    
+                                    <td>15.2 ounces ( <a href="#">View shipping rates and policies</a> )</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>Domestic Shipping</th>
+                                    
+                                    <td>Item can be shipped within the U.S.</td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    
+                                    <th>International Shipping</th>
+                                    
+                                    <td>This item can be shipped to select countries outside of the U.S. <a href="#">Learn More</a></td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>ISBN</th>
+                                    
+                                    <td>B006EFMSSM</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    <th>Item Model Number</th>
+                                    
+                                    <td>X6999</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>Manufacturer recommended age</th>
+                                    
+                                    <td>3 years and older</td>
+                                    
+                                </tr>
+                                
+                            </table>
+                                
+                        </div>
+                            
+                        <div id="warranty">
+                            
+                            <table>
+                                
+                                <tr>
+                                    
+                                    <th>Manufacturer Contact Information</th>
+                                    
+                                    <th>Return Policies</th>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td><a href="#">Manufacturer's Product Page</a></td>
+                                    
+                                    <td>Return for refund within: 30 days</td>
+                                
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td>Website: <a href="#">http://www.tinycars.com/</a></td>
+                                    
+                                    <td>Return for replacement within: 30 days</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                
+                                    <td><a href="#">Support Website</a></td>
+                                    
+                                    <td>This item is covered by Gizmo Toy's <a href="#">Return Policy</a>.</td>
+                                
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td><a href="#">View other products from Tiny Cars</a></td>
+                                    
+                                    <td></td>
+                                    
+                                </tr>
+                                
+                            </table>
+                                
+                        </div>
+                        
+					</div>
+				
+				</section>
+		
+			</article>
+		
+			<aside class="suggested-products">
+			
+				<h3>Suggested Toys</h3>
+				
+				<div class="suggested-toy">
+				
+					<div class="related-image">
+                            
+                         <a href="fire_truck.html">
+
+                         	<img src="../common/art/firetruck/red_firetruck.png"/>
+
+                         </a>
+                            
+                    </div>
+					
+					<section>
+					
+						<h4><a href="fire_truck.html">Tonka Fire Engine</a></h4>
+						
+						<p>Rush to the rescue with this Tonka Fire Engine!</p>
+					
+					</section>
+				
+				</div>
+				
+				<div class="suggested-toy">
+					
+				    <div class="related-image">
+                            
+                        <a href="lincoln_logs.html">
+
+                        	<img src="../common/art/lincoln_logs/lincoln_logs2.jpg"/>
+
+                        </a>
+                            
+                   	</div>
+					
+					<section>
+					
+						<h4><a href="lincoln_logs.html">Lincoln Logs</a></h4>
+
+						<p>Lincoln Logs is a classic construction toy that continues to entertain.</p>
+					
+					</section>
+				
+				</div>
+				
+				<div class="suggested-toy">
+					
+				    <div class="related-image">
+                            
+                        <a href="yoyos.html">
+
+                        	<img src="../common/art/yoyo/blue_yoyo.png"/>
+
+                        </a>
+                            
+                   	</div>
+					
+					<section>
+					
+						<h4><a href="yoyos.html">Duncan YoYos</a></h4>
+
+						<p>This 4-pack of YoYos is bound to wind up in your home!</p>
+					
+					</section>
+				
+				</div>
+		
+			</aside>
+		
+		</main>
+    
+    </div>
+	
+	<footer class="outerwrap">
+	
+		<div class="innerwrap">
+		
+			<section class="copyright">
+			
+				<p>&copy; Copyright 2018 All Rights Reserved</p>
+				
+				<p>Gizmo Toys</p>
+			
+			</section>
+			
+			<section class="contact">
+
+				<h5>Contact Information</h5>
+			
+				<p><span>Marketing Executive:</span> Natsuki Doki</p>
+				
+				<p><span>Phone:</span> (555) 666-1488</p>
+				
+				<p><span>Email:</span> market@gizmotoys.com</p>
+			
+			</section>
+		
+		</div>
+	
+	</footer>
+	
+</body>
+
+</html>

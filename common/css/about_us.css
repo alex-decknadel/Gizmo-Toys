@@ -1,0 +1,56 @@
+/* These rules apply to the About Us page */
+
+h1 {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+section {
+	margin-bottom: 2em;
+}
+
+section p {
+	margin-top: .5em;
+}
+
+section p#quote {
+	text-align: center;
+	font-size: 1.15em;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #c5e0e8;
+	padding: 1em;
+}
+
+#personnel > div {
+	display: flex;
+	margin-top: 2em;
+}
+
+#personnel div div {
+	margin-left: 2em;
+}
+
+#personnel div img {
+	flex: 0 0 214px;
+	align-self: flex-start;
+}
+
+@media screen and (max-width: 750px) {
+	article {
+		text-align: center;
+	}
+
+	#personnel > div {
+		display: block;
+	}
+
+	#personnel div div {
+		margin-left: 0;
+		margin-top: 1em;
+	}
+
+	#personnel div div h3 {
+		padding-bottom: .5em;
+	}
+}

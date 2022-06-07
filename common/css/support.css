@@ -1,0 +1,86 @@
+/* Support Page */
+
+main.innerwrap article:not(.product) h1 {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+section.contact-info {
+    margin-bottom: 2em;
+}
+
+section.contact-info h2, section.faq h2 {
+    padding-bottom: .75em;
+}
+
+section.contact-info :not(:last-child) {
+    padding-bottom: .75em;
+}
+
+section.contact-info div {
+    margin-left: 2em;
+}
+
+section.contact-info div, section.contact-info p span {
+	font-style: italic;
+}
+
+section.faq {
+    margin-bottom: .75em;
+}
+
+section.faq p {
+    padding-bottom: 1.5em;
+}
+
+section.contact-info p a:hover, section.faq p a:hover {
+    color: #aaa;
+}
+
+@media screen and (max-width: 750px) {
+	section div p, section.contact-info p {
+		text-align: center;
+	}
+}
+
+aside.suggested-links h3 {
+    margin-bottom: 1em;
+}
+
+article h5 {
+    padding-bottom: .5em;
+}
+
+aside.suggested-links table tr th {
+    width: 49%;
+    text-align: left;
+    padding: 1em .5em;
+}
+
+aside.suggested-links table tr td {
+    width: 49%;
+    text-align: right;
+    padding: 1em .5em;
+}
+
+aside table {
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 750px) {
+    article.support, aside.suggested-links {
+        text-align: center;
+    }
+
+    article p {
+        text-align: left;
+    }
+
+    aside table {
+        margin: 0 auto 1em auto;
+    }
+
+    section.contact-info div {
+        margin-left: 0;
+    }
+}

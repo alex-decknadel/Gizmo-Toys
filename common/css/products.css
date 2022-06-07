@@ -1,0 +1,23 @@
+/* Products Page */
+article.products section {
+    flex: 0 0 30%;
+    margin: 1em;
+}
+
+article.products section div.related-image {
+    padding-top: 1em;
+}
+
+article.products section h3 {
+    text-align: center;
+}
+
+section#educational {
+    border-top: none;
+}
+
+@media screen and (max-width: 620px) {
+    article.products > section {
+        display: block;
+    }
+}

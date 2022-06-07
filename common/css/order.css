@@ -1,0 +1,119 @@
+/* This is for the Order page */
+#order {
+	border: 1px solid #000;
+	background-color: #c5e0e8;
+	font-family: 'Lato', sans-serif;
+	margin: 0 auto;
+	width: 70%;
+	max-width: 800px;
+	margin-bottom: 1em;
+}
+
+fieldset {
+	display: flex;
+	justify-content: center;
+	margin: .5em;
+	padding: .5em 1em;
+	background-color: #e4e1ce;
+}
+
+legend {
+	margin-left: 1em;
+	padding: 0 .25em;
+}
+
+dl {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 1em 0;
+}
+
+dt {
+	font-size: 1.125em;
+}
+
+dd {
+	font-size: 1em;
+}
+
+#contact-field dt, #credit dt {
+	flex: 0 1 30%;
+	text-align: right;
+	margin-right: .88888888889em;
+}
+
+#order-items dl {
+	display: block;
+	width: 60%;
+	margin: 1em auto;
+}
+
+#order-items dl dd {
+	padding-left: 1.5em;
+}
+
+#order-gloves dd div:first-child input#gloves01 {
+	margin-right: .75em;
+}
+
+#order-items dl dd input[type="number"] {
+	padding-left: 1em;
+}
+
+#order-gloves dd div:first-child {
+	padding-bottom: .5em;
+}
+
+#order-items dl dt {
+	padding-bottom: .25em;
+}
+
+#submit {
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: .5em;
+	font-size: 1em;
+	transition: .3s all ease;
+}
+
+#submit:hover {
+	background-color: #71c8e2;
+}
+
+.date-field {
+	display: flex;
+}
+
+.year {
+	padding-left: .25em;
+}
+
+#order input, #order select {
+	padding: .25em;
+}
+
+#order > dl {
+	justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+	fieldset dl {
+		display: block;
+	}
+
+	#order {
+		width: 100%;
+	}
+
+	#contact-field dl dt, #credit dl dt {
+		text-align: left;
+		padding-bottom: .25em;
+		width: 100%;
+	}
+
+	#order-items dl {
+		width: 100%;
+		margin: 1em 0;
+	}
+}

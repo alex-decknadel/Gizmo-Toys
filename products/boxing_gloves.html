@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+  
+	<link rel="shortcut icon" href="">
+	<link rel="apple-touch-icon" href="" />
+	
+	<title>Gizmo Toys - Boxing Gloves</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="../common/css/default.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+
+	<script src="../common/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="../common/js/lib.js" type="text/javascript"></script>
+	<script src="../common/js/changeImage.js" type="text/javascript"></script>
+
+<script>
+
+	// Load jQuery and other Javascript after page is done loading	
+	$( document.body ).ready(function () {
+
+		$( "#mobilenav" ).click(function() {
+			$( "#primary" ).slideToggle( "fast", function() {
+			});
+		});
+
+	});
+
+</script>
+
+
+</head>
+
+<body>
+
+	<header class="outerwrap">
+
+		<div class="hero">
+
+			<div class="innerwrap">
+                
+            	<a href="#"><img src="../common/art/christmas_hero.png"/></a>
+
+        	</div>
+			
+        </div>
+	
+		<div class="innerwrap">
+            			
+			<div class="logo">
+                
+                <div>
+
+                	<a href="index.html">
+
+                		<img src="../common/art/logo.png"/>
+
+                	</a>
+
+                </div>
+			
+			</div>
+
+			<div>
+	
+				<a href="../order.html">
+
+					<img src="../common/art/shopping-cart.png"/>
+
+				</a>			
+				
+				<form id="search-bar" action="http://www.google.com/search?q=">
+				
+					<input type="search" name="q" id="search" placeholder="Search..." />
+					
+				</form>
+
+				<nav>
+				
+					<ul id="mobile">
+						
+						<li><a href="#primary" id="mobilenav">☰</a></li>
+						
+					</ul>
+				
+					<ul id="primary">
+					
+						<li><a href="../index.html">Home</a></li>
+						
+						<li>
+							<a href="../products.html">Products</a>
+
+							<ul id="products-menu">
+
+								<li><a href="../products.html#educational">Educational</a></li>
+
+								<li><a href="../products.html#electronics">Electronics</a></li>
+
+								<li><a href="../products.html#figures">Figures and Dolls</a></li>
+
+								<li><a href="../products.html#food">Food Related</a></li>
+
+								<li><a href="../products.html#games">Games</a></li>
+
+								<li><a href="../products.html#models">Models/Modelling Kits</a></li>
+
+								<li><a href="../products.html#toy-cars">Toy Cars</a></li>
+
+								<li><a href="../products.html#toy-guns">Toy Guns</a></li>
+
+								<li><a href="../products.html#other">Other</a></li>
+
+							</ul>
+
+						</li>
+						
+						<li><a href="../order.html">Order</a></li>
+						
+						<li><a href="../about_us.html">About Us</a></li>
+						
+						<li><a href="../support.html">Support</a></li>
+					
+					</ul>
+				
+				</nav>
+                
+			</div>
+	
+		</div>
+	
+	</header>
+	
+	<div class="outerwrap">
+	
+		<main class="innerwrap">
+	
+			<article class="product">
+		
+				<section class="product-images">
+                    
+                    <div>
+				
+					   <img id="product-image" src="../common/art/boxing_gloves/boxing_gloves.png"/>
+				
+				    </div>
+                    
+                    <div id="thumbnails">
+
+                      	<!-- All photos provided by K'nex -->
+                        <div class="thumbnail"><img onclick="changeGloves1()" src="../common/art/boxing_gloves/boxing_thumbnail.png"/></a></div>
+                        
+                        <div class="thumbnail"><img onclick="changeGloves2()" src="../common/art/boxing_gloves/bluegloves_thumbnail.png"/></div>
+                        
+                    </div>
+                
+                </section>
+				
+				<section class="information">
+				
+					<div class="product-info">
+					
+						<h1>Everlast Boxing Gloves</h1>
+						
+						<p>Let's get ready to rumble! These are youth training gloves for boxing or Mixed Martial Arts. These come in either blue or red.</p>
+
+                       	<div>
+
+							<h2>$19.99</h2>
+						
+                        	<button type="submit">Add to Cart</button>
+
+                        </div>
+					
+					</div>
+					
+					<div class="tabs">
+					
+						<input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1">Overview</label>
+                        
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2">Specifications</label>
+                        
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3" id="last-tab">Warranty &amp; Returns</label>
+                        
+                        <div id="overview">
+
+                        	<p>Let's get ready to rumble! These are youth training gloves for boxing or Mixed Martial Arts. These durable, soft padded boxing gloves are youth-sized, and intended for training and competitive use in boxing and mixed martial arts. Made of premium synthetic leather, with rugged and long-lasting stitching and construction, the gloves have an easy slip-on design and simple elastic cuff closure.</p>
+
+                        	<p>The name Everlast is synonymous with boxing. Known internationally as a manufacturer of boxing equipment, Everlast started out as a swimwear manufacturer in 1910. Headquartered in the Bronx, NY, the company was founded by 17-year-old Jacob Golomb. The son of a tailor and an avid swimmer, Golomb was dissatisfied with the durability of swimsuits at the time, which scarecely lasted a season, so he began making suits that he guaranteed would last for a full year. He dubbed them "Everlast."</p>
+                                
+                        </div>
+                        
+                        <div id="specifications">
+                                
+                            <table>
+                                
+                                <tr>
+                                    
+                                    <th>Product Dimensions</th>
+                                    
+                                    <td>13.1 x 7 x 5.7 inches</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>Item Weight</th>
+                                    
+                                    <td>1.1 pounds</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>Shipping Weight</th>
+                                    
+                                    <td>1.1 pounds ( <a href="#">View shipping rates and policies</a> )</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>Domestic Shipping</th>
+                                    
+                                    <td>Item can be shipped within the U.S.</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>International Shipping</th>
+                                    
+                                    <td>This item can be shipped to select countries outside of the U.S. <a href="#">Learn More</a></td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <th>ISBN</th>
+                                    
+                                    <td>B00005RCQG</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    <th>Item Model Number</th>
+                                    
+                                    <td>3003</td>
+                                    
+                                </tr>
+                                
+                            </table>
+                                
+                        </div>
+                            
+                        <div id="warranty">
+                            
+                            <table>
+                                
+                                <tr>
+                                    
+                                    <th>Manufacturer Contact Information</th>
+                                    
+                                    <th>Return Policies</th>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td><a href="https://www.everlast.com/small-laceless-boxing-gloves">Manufacturer's Product Page</a></td>
+                                    
+                                    <td>Return for refund within: non-refundable</td>
+                                
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td>Website: <a href="https://www.everlast.com/">http://www.everlast.com/</a></td>
+                                    
+                                    <td>Return for replacement within: non-replaceable</td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                
+                                    <td><a href="#">Support Website</a></td>
+                                    
+                                    <td>This item is covered by Gizmo Toy's <a href="#">Consumable Product Return Policy</a>.</td>
+                                
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td><a href="https://www.everlast.com/">View other products from Knex</a></td>
+                                    
+                                    <td></td>
+                                    
+                                </tr>
+                                
+                            </table>
+                                
+                        </div>
+                        
+					</div>
+				
+				</section>
+		
+			</article>
+		
+			<aside class="suggested-products">
+			
+				<h3>Suggested Toys</h3>
+				
+				<div class="suggested-toy">
+				
+					<div class="related-image">
+                            
+                         <a href="rubiks_cube.html"><img src="../common/art/rubiks_cube/rubiks_cube.jpg"/></a>
+                            
+                    </div>
+					
+					<section>
+					
+						<h4><a href="rubiks_cube.html">Rubik's Cube</a></h4>
+						
+						<p>The Rubik's Cube is one of the bestselling toys of all time.</p>
+					
+					</section>
+				
+				</div>
+				
+				<div class="suggested-toy">
+					
+				    <div class="related-image">
+                            
+                        <img src="../common/art/wiffle_balls/yellow_wiffle_ball.png"/>
+                            
+                    </div>
+					
+					<section>
+					
+						<h4><a href="wiffle_balls.html">Wiffle Balls</a></h4>
+						
+						<p>These colorful Wiffle balls are the ideal balls for all your baseball needs!</p>
+					
+					</section>
+				
+				</div>
+				
+				<div class="suggested-toy">
+					
+				    <div class="related-image">
+                            
+                        <img src="../common/art/yoyo/blue_yoyo.png"/>
+                            
+                    </div>
+					
+					<section>
+					
+						<h4><a href="yoyos.html">Duncan Yo-Yos</a></h4>
+						
+						<p>This 4-pack of YoYos is bound to wind up in your home!</p>
+					
+					</section>
+				
+				</div>
+		
+			</aside>
+		
+		</main>
+    
+    </div>
+	
+	<footer class="outerwrap">
+	
+		<div class="innerwrap">
+		
+			<section class="copyright">
+			
+				<p>&copy; Copyright 2018 All Rights Reserved</p>
+				
+				<p>Gizmo Toys</p>
+			
+			</section>
+			
+			<section class="contact">
+
+				<h5>Contact Information</h5>
+			
+				<p><span>Marketing Executive:</span> Natsuki Doki</p>
+				
+				<p><span>Phone:</span> (555) 666-1488</p>
+				
+				<p><span>Email:</span> market@gizmotoys.com</p>
+			
+			</section>
+		
+		</div>
+	
+	</footer>
+	
+</body>
+
+</html>
